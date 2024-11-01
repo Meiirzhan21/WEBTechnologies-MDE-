@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <title>Учись программировать</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark shadow-sm py-">
+        <div class="container">
+            <a class="navbar-brand" href="#">Учись программировать</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="profile.html">Личный кабинет</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">Про нас</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Дополнительно
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Наши проекты</a></li>
+                            <li><a class="dropdown-item" href="#">Статьи</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">FAQ</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <button id="openFormBtn">Связаться с нами</button>
+                        <button id="themeToggle">Сменить тему</button>
+                    </li>
+                    
+                </ul>
+                <a href="record.html" class="btn btn-outline-success ms-lg-3">Войти</a>
+            </div>
+        </div>
+    </nav>
+    
+
+    <div id="popupForm" class="popup-form">
+        <div class="form-container">
+            <span class="close-btn" id="closeFormBtn">&times;</span>
+            <form action="submit_form.html" method="post">
+                <label for="popupName">ФИО:</label>
+                <input type="text" id="popupName" name="name" required>
+                <label for="popupEmail">Email:</label>
+                <input type="email" id="popupEmail" name="email" required>
+                <label for="popupMessage">Сообщение:</label>
+                <textarea id="popupMessage" name="message" rows="4" required></textarea>
+                <button type="submit">Отправить</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="start">
+        <header>
+            <h1>Учись программировать легко</h1>
+            <p>Интерактивные уроки, примеры и проекты</p>
+        </header>
+    </div>
+
+    <section id="courses" class="container my-7">
+        <h2 class="text-center mb-5">Наши курсы</h2>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+            <div class="col">
+                <div class="card h-100 shadow-sm">
+                    <img src="images/html.jpg" class="card-img-top" alt="HTML Course">
+                    <div class="card-body">
+                        <h3 class="card-title">HTML</h3>
+                        <p class="card-text">Изучите основы веб-разметки с помощью HTML.</p>
+                        <button onclick="playSound().then(() => location.href='HTML COURSE.html');" class="btn btn-primary w-100">Начать</button>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 shadow-sm">
+                    <img src="images/css.jpg" class="card-img-top" alt="CSS Course">
+                    <div class="card-body">
+                        <h3 class="card-title">CSS</h3>
+                        <p class="card-text">Узнайте, как стилизовать веб-страницы с помощью CSS.</p>
+                        <button onclick="playSound().then(() => location.href='css.html');" class="btn btn-primary w-100">Начать</button>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 shadow-sm">
+                    <img src="images/java.jpg" class="card-img-top" alt="JavaScript Course">
+                    <div class="card-body">
+                        <h3 class="card-title">JavaScript</h3>
+                        <p class="card-text">Откройте для себя динамическое программирование на JavaScript.</p>
+                        <button onclick="playSound().then(() => location.href='java.html');" class="btn btn-primary w-100">Начать</button>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 shadow-sm">
+                    <img src="images/python.jpg" class="card-img-top" alt="Python Course">
+                    <div class="card-body">
+                        <h3 class="card-title">Python</h3>
+                        <p class="card-text">Освойте Python для решения реальных задач.</p>
+                        <button onclick="playSound().then(() => location.href='python.html');" class="btn btn-primary w-100">Начать</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="reviews">
+        <section id="reviews">
+            <h2>Отзывы студентов</h2>
+            <div>
+                <p>"Отличный курс! Очень помогло!" - Иван Петров</p>
+                <p>"Обучение на высшем уровне." - Мария Иванова</p>
+            </div>
+        </section>
+    </div>
+    <div class="under">
+        <footer>
+            <p>|M|D|E| Учебная Платформа © 2024</p>
+        </footer>
+    </div>
+
+    <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="contactpg.js"></script>
+    <script src="Keyboard Event Handling.js"></script>
+    <script src="responding.js"></script>
+    <script src="sound.js"></script>
+    <script src="animation.js"></script>
+    <script src="changeTheme.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация и Вход</title>
+    <link rel="stylesheet" href="record.css">
+</head>
+<body>
+    <header>
+        <h1>Учебная Платформа</h1>
+        <p>Зарегистрируйтесь или войдите, чтобы начать своё путешествие в программирование!</p>
+        <button id="loginButton">Войти</button>
+    </header>
+
+    <main>
+        <form id="registrationForm">
+            <h2>Регистрация</h2>
+            <label for="name">Полное имя:</label><br>
+            <input type="text" id="name" name="name" placeholder="Введите ваше полное имя" required><br><br>
+            <label for="email">Электронная почта:</label><br>
+            <input type="email" id="email" name="email" placeholder="Введите вашу почту" required><br><br>
+            <label for="password">Пароль:</label><br>
+            <input type="password" id="password" name="password" placeholder="Создайте пароль" required><br><br>
+            <label for="confirmPassword">Подтвердите пароль:</label><br>
+            <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Подтвердите пароль" required><br><br>
+            <input type="submit" value="Зарегистрироваться">
+            <button type="button" id="resetButton">Сбросить</button>
+        </form>
+
+        <button id="logoutButton" style="display:none;">Выйти</button>
+    </main>
+
+    <footer>
+        <p>|M|D|E| Учебная Платформа © 2024</p>
+    </footer>
+
+    <!-- Модальное окно входа -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Вход</h2>
+            <label for="loginEmail">Электронная почта:</label><br>
+            <input type="email" id="loginEmail" placeholder="Введите вашу почту" required><br><br>
+            <label for="loginPassword">Пароль:</label><br>
+            <input type="password" id="loginPassword" placeholder="Введите пароль" required><br><br>
+            <button id="submitLogin">Войти</button>
+        </div>
+    </div>
+
+    <script src="authentication.js"></script>
+    <script src="validation.js"></script>
+    <script src="reset.js"></script>
+    <script src="changeTheme.js" defer></script>
+    <script src="animation.js"></script>
+</body>
+</html>

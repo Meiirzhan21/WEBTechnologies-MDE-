@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Курсы по Python</title>
+    <link rel="stylesheet" href="pythonpage.css">
+    <script src="changeTheme.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Курсы по Python</h1>
+        <p>Узнайте всё о программировании на Python</p>
+    </header>
+
+    <section id="courses">
+        <h2>Наши курсы</h2>
+        <div>
+            <div>
+                <h3>Python для начинающих</h3>
+                <p>Изучите основы программирования на Python с нуля.</p>
+                <button onclick="location.href='record.html'">Записаться</button>
+            </div>
+            <div>
+                <h3>Продвинутый Python</h3>
+                <p>Углубленные темы Python для опытных разработчиков.</p>
+                <button onclick="location.href='record.html'">Записаться</button>
+            </div>
+            <div>
+                <h3>Веб-разработка с Django</h3>
+                <p>Создание сайтов и веб-приложений с Python и Django.</p>
+                <button onclick="location.href='record.html'">Записаться</button>
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="video-tutorials">
+        <h2>Видеоуроки</h2>
+        <div>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/rfscVS0vtbw" title="YouTube video"></iframe>
+            <p>Посмотрите вводный урок по Python.</p>
+        </div>
+    </section>
+
+    
+    <section id="code-examples">
+        <h2>Примеры кода</h2>
+        <pre>
+def hello_world():
+    print("Hello, World!")
+hello_world()
+        </pre>
+        <p>Пример простого кода на Python.</p>
+    </section>
+
+    <div class="container">
+        <h2>Frequently Asked Questions</h2>
+
+        <button class="accordion">Что такое Python?</button>
+        <div class="panel">
+            <p>Python — это язык программирования, который позволяет быстро работать и эффективно интегрировать системы.</p>
+        </div>
+        
+        <button class="accordion">Как начать изучать Python?</button>
+        <div class="panel">
+            <p>Чтобы начать изучение Python, вы можете найти онлайн-уроки, курсы и документацию.</p>
+        </div>
+        
+        <button class="accordion">Каковы преимущества изучения Python?</button>
+        <div class="panel">
+            <p>Python легко изучать, он универсален и имеет широкий спектр применения, от веб-разработки до анализа данных.</p>
+        </div>
+        
+        <button class="accordion">Можно ли использовать Python для веб-разработки?</button>
+        <div class="panel">
+            <p>Да, Python можно использовать для веб-разработки с такими фреймворками, как Django и Flask.</p>
+        </div>
+        
+        <button class="accordion">Хорош ли Python для науки о данных?</button>
+        <div class="panel">
+            <p>Определенно! Python имеет много библиотек и фреймворков, которые очень полезны для науки о данных.</p>
+        </div>
+        
+
+    
+    <section id="reviews">
+        <h2>Отзывы студентов</h2>
+        <div class="review-container">
+            <div class="review">
+                <p>"Отличные курсы, помогли мне начать карьеру программиста!"</p>
+                <p class="student-name">- Иван</p>
+            </div>
+            <div class="review">
+                <p>"Понравился стиль преподавания и материалы."</p>
+                <p class="student-name">- Мария</p>
+            </div>
+            <div class="review">
+                <p>"Интересные задания и качественные материалы!"</p>
+                <p class="student-name">- Алексей</p>
+            </div>
+        </div>
+        <h3>Оставьте свой отзыв</h3>
+        <div class="review-point">
+            <textarea id="review-text" placeholder="Ваш отзыв..." required></textarea>
+            <input type="text" id="reviewer-name" placeholder="Ваше имя..." required />
+            <button type="submit">Отправить</button>
+        </div>
+    </section>
+    
+
+    
+    <footer>
+        <p>|M|D|E| Учебная Платформа © 2024</p>
+    </footer>
+    <script src="Accordionpg.js"></script>
+    <script src="animation.js"></script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Курсы по CSS</title>
+  <link rel="stylesheet" href="csspage.css">
+  <script src="changeTheme.js" defer></script>
+</head>
+<body>
+<header>
+  <h1>Курсы по CSS</h1>
+  <p>Узнайте всё о стилях и дизайне на CSS</p>
+</header>
+
+<section id="courses">
+  <h2>Наши курсы</h2>
+  <div>
+    <div>
+      <h3>CSS для начинающих</h3>
+      <p>Изучите основы каскадных таблиц стилей с нуля.</p>
+      <button onclick="location.href='record.html'">Записаться</button>
+    </div>
+    <div>
+      <h3>Продвинутый CSS</h3>
+      <p>Углубленные темы CSS для опытных веб-разработчиков.</p>
+      <button onclick="location.href='record.html'">Записаться</button>
+    </div>
+    <div>
+      <h3>Адаптивный дизайн с CSS</h3>
+      <p>Создание адаптивных сайтов с использованием CSS Flexbox и Grid.</p>
+      <button onclick="location.href='record.html'">Записаться</button>
+    </div>
+  </div>
+</section>
+
+<section id="video-tutorials">
+  <h2>Видеоуроки</h2>
+  <div>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/1Rs2ND1ryYc" title="YouTube video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <p>Посмотрите вводный урок по CSS.</p>
+  </div>
+</section>
+
+<section id="code-examples">
+  <h2>Примеры кода</h2>
+  <pre>
+/* Пример простого CSS-кода */
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: blue;
+}
+
+p {
+    font-size: 16px;
+}
+  </pre>
+  <p>Пример простого кода на CSS.</p>
+</section>
+
+<section id="reviews">
+  <h2>Отзывы студентов</h2>
+  <div class="review-container">
+    <div class="review">
+      <p>"Курсы помогли мне освоить CSS и создать свой первый сайт!"</p>
+      <p class="student-name">- Анна</p>
+    </div>
+    <div class="review">
+      <p>"Отличные материалы и доступные объяснения!"</p>
+      <p class="student-name">- Иван</p>
+    </div>
+    <div class="review">
+      <p>"Прекрасный курс, я научился многому!"</p>
+      <p class="student-name">- Екатерина</p>
+    </div>
+  </div>
+  <h3>Оставьте свой отзыв</h3>
+  <div class="review-point">
+    <textarea id="review-text" placeholder="Ваш отзыв..." required></textarea>
+    <input type="text" id="reviewer-name" placeholder="Ваше имя..." required />
+    <button type="submit">Отправить</button>
+  </div>
+</section>
+
+<footer>
+  <p>|M|D|E| Учебная Платформа © 2024</p>
+</footer>
+<script src="animation.js"></script>
+</body>
+</html>
