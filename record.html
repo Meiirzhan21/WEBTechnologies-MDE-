@@ -28,26 +28,25 @@
             <button type="button" id="resetButton">Сбросить</button>
         </form>
 
+        <div id="loginModal" class="modal" style="display:none;">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Вход</h2>
+                <label for="loginEmail">Электронная почта:</label><br>
+                <input type="email" id="loginEmail" placeholder="Введите вашу почту" required><br><br>
+                <label for="loginPassword">Пароль:</label><br>
+                <input type="password" id="loginPassword" placeholder="Введите пароль" required><br><br>
+                <button id="submitLogin">Войти</button>
+            </div>
+        </div>
+
         <button id="logoutButton" style="display:none;">Выйти</button>
     </main>
 
     <footer>
         <p>|M|D|E| Учебная Платформа © 2024</p>
     </footer>
-
-    <!-- Модальное окно входа -->
-    <div id="loginModal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <h2>Вход</h2>
-            <label for="loginEmail">Электронная почта:</label><br>
-            <input type="email" id="loginEmail" placeholder="Введите вашу почту" required><br><br>
-            <label for="loginPassword">Пароль:</label><br>
-            <input type="password" id="loginPassword" placeholder="Введите пароль" required><br><br>
-            <button id="submitLogin">Войти</button>
-        </div>
-    </div>
-
+    <script src="authentication.js" defer></script>
     <script src="authentication.js"></script>
     <script src="validation.js"></script>
     <script src="reset.js"></script>
@@ -55,3 +54,5 @@
     <script src="animation.js"></script>
 </body>
 </html>
+
+  

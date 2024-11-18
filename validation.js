@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function () {
   
       
       const email = document.getElementById('email').value;
-      const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,6}$/i;
+      const emailPattern = /error/i;
       if (!email) {
         displayError('email', 'Email is required.');
         hasError = true;

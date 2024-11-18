@@ -115,9 +115,9 @@ footer p {
     margin: 5px 0;
 }
 
-/* Стили для всплывающей формы */
+
 .popup-form {
-    display: none; /* Скрыта по умолчанию */
+    display: none; 
     position: fixed;
     top: 0;
     left: 0;
