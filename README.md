@@ -1,4 +1,6 @@
 # Web Development Learning Platform
+[View the Demo on GitHub Pages](https://meiirzhan21.github.io/WEBTechnologies-MDE-/)
+
 
 A comprehensive, interactive platform aimed at helping users learn and practice web development concepts. This platform provides engaging content and interactive tools that guide users through HTML, CSS, JavaScript, and Python, among other web technologies.
 
